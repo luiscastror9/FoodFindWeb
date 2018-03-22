@@ -1,13 +1,114 @@
-﻿
+﻿<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("b").append(" <p>Vacuna</p>");
+    });
+    $("#btn2").click(function(){
+        $("b").append("<p>Porcina</p>");
+		});
+		$("#btn3").click(function () {
+			$("b").append("<p>Aves</p>");
+		});
+		$("#btn4").click(function () {
+			$("b").append(" <p>Semillas</p>");
+		});
+		$("#btn5").click(function () {
+			$("b").append("<p>Hojas</p>");
+		});
+		$("#btn6").click(function () {
+			$("b").append("<p>Frutos</p>");
+		});
+});
+    </script>
+    <style>
+        b {
+            color: darkred;
+        }
+    </style>
+
+</head>
+
+
 <div class="row">
     <div class="col-md-4">
         <h2>Vamos a cocinar</h2>
     </div>
     <div class="col-md-4">
-        <img width="150" height="150" src="~/Content/Images/YoCocinoLogo.gif"/>
+        <img width="200" height="200" src="~/Content/Images/YoCocinoLogo.gif" />
     </div>
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="/Account/Register" id="registerLink">Registrarse</a></li>
-        <li><a href="/Account/Login" id="loginLink">Entrar</a></li>
+        <li><a href="/Account/Register" id="registerLink">Register</a></li>
+        <li><a href="/Account/Login" id="loginLink">Log in</a></li>
+    </ul>
+</div>
+<br />
+<br />
+<br />
+<br />
+<div class="row">
+    <div class="col-md-4">
+        <div class="panel-group driving-license-settings" id="accordion">
+            <div>
+                <h4>
+                    <label data-toggle="collapse" data-target="#collapseOne">
+                        <img width="35" height="35" src="~/Content/Images/img22.png" /> <strong>Carnes</strong>
+                    </label>
+                </h4>
+            </div>
+
+
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="checkbox">
+                        <button id="btn1"> Vacuna </button>
+                    </div>
+                    <div class="checkbox">
+                        <button id="btn2"> Porcina </button>
+                    </div>
+                    <div class="checkbox">
+                        <button id="btn3"> Aves    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-group driving-license-settings" id="accordion">
+
+
+
+            <div>
+                <h4>
+                    <label data-toggle="collapse" data-target="#collapseTwo">
+                        <img width="35" height="35" src="~/Content/Images/img33.png" /> <strong>Verduras</strong>
+                    </label>
+                </h4>
+            </div>
+
+
+            <div id="collapseTwo" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="checkbox">
+                        <button id="btn4">semillas </button>
+                    </div>
+                    <div class="checkbox">
+                        <button id="btn5">Hoja </button>
+                    </div>
+                    <div class="checkbox">
+                        <button id="btn6">fruto </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-4">
+        <p>Cocinando...</p>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+        <b>Listado de Ingredientes</b>
+
     </ul>
 </div>
