@@ -784,8 +784,8 @@ pre code {
 }
 
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
+  display: block;
+ 
 }
 
 .row:before,
@@ -4169,6 +4169,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
+  text-align: right;
   right: 0;
   left: 0;
   border-width: 0 0 1px;
@@ -4273,7 +4274,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
+    float: right;
     margin: 0;
   }
   .navbar-nav > li {
